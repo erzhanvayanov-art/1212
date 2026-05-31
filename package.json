@@ -1,0 +1,34 @@
+{
+  "name": "course_data_lab",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "se": "cross-env PRISMA_ENGINES_MIRROR='https://binaries.prismacdn.com' PRISMA_BINARIES_MIRROR='https: //npmmirror.com/mirrors/prisma' PRISMA_ENGINES_CHECKSUM_IGNORE_MISSING=1",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "t:add": "tsx ./utils/new_task.ts",
+    "t:test": "tsx ./utils/test.ts"
+  },
+  "devDependencies": {
+    "@prisma/client": "^6.19.0",
+    "@types/node": "^24.0.12",
+    "@types/sax": "^1.2.7",
+    "prisma": "^6.19.0",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.3",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "@xmldom/xmldom": "^0.8.11",
+    "class-transformer": "^0.5.1",
+    "dotenv": "^17.2.3",
+    "mongodb": "^6.20.0",
+    "reflect-metadata": "^0.2.2",
+    "sax": "^1.4.1",
+    "tsx": "^4.20.3",
+    "xpath": "^0.0.34"
+  }
+}
